@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+
+#root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: #0C4842;
+}
+
+.gloss {
+  position: fixed;
+  width: 100%;
+  height: 478px;
+  background: url(./images/gloss.png) repeat-x;
+}
+
+.app-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0px 10%;
+  height: 60px;
+  width: 100%;
+}
+
+.app-header div {
+  margin-right: 10px;
+}
+
+.app-header span {
+  cursor: pointer;
+}
+
+.app-header span:hover {
+  color: #A8D8B9;
+}
+
+.app-main {
+  display: flex;
+  height: calc(100% - 120px);
+  width: 100%;
+}
+
+.app-main-body {
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.body-inner {
+  height: 100%;
+  width: 100%;
+}
+
+.ball-view {
+  position: absolute;
+  top: -65px;
+  right: 0px;
+  width: 80px;
+  height: 400px;
+}
+
+.ball {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #AD2333;
+}
+
+.ball-word {
+  height: calc(100% - 80px);
+  width: 100%;
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.app-footer {
+  height: 60px;
+  width: 100%;
+}
+
+.table-view {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.table-view>div {
+  width: 50%;
+  height: 50%;
+}
+
+.table-row {
+  display: flex;
+  height: 54px;
+  width: 100%;
+}
+
+.table-cell {
+  height: 100%;
+  flex: 1;
+}
+
+.cell-words {
+  display: flex;
+}
+
+
+.test-view {
+  display: none;
+}
