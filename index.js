@@ -1,5 +1,5 @@
 ;(function main (tableObj) {
-  
+
   var baseWordView = document.querySelector('.base-word');
   var tableFragment = document.createDocumentFragment();
   tableObj.base.forEach(t => {
@@ -16,6 +16,7 @@
         var subCellDiv = document.createElement('div');
         subCellDiv.className = 'cell-words';
         var hiraganaDiv = document.createElement('div');
+        hiraganaDiv.className = "hiragana-div";
         var katakanaDiv = document.createElement('div');
         hiraganaDiv.textContent = sub.hiragana;
         katakanaDiv.textContent = sub.katakana;

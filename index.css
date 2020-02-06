@@ -119,6 +119,9 @@ html, body, #root {
   display: flex;
 }
 
+.hiragana-div {
+  margin-right: 5px;
+}
 
 .test-view {
   display: none;
