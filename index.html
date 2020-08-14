@@ -13,7 +13,7 @@
     <div class="gloss"></div>
     <header class="app-header">
       <div><span>あらゆる</span></div>
-      <div><span>かんが</span></div>
+      <div><span onclick="handleTestDialog(event)">練習します</span></div>
     </header>
     <main class="app-main">
       <div class="app-main-body">
@@ -33,6 +33,27 @@
       </div>
     </main>
     <footer class="app-footer"></footer>
+    <div class="dialog-view">
+      <div class="dialog-inner">
+        <div class="inner-close" onclick="handleDialogClose()"></div>
+        <div class="inner-card">
+          <div class="text-box">
+            <div class="hiragana"></div>
+            <div class="katakana">123</div>
+            <div class="romaji">123</div>
+          </div>
+        </div>
+        <div class="inner-btns">
+          <div class="inner-tools">
+            <div class="toggle-hiragana" onclick="handleToggleHiragana(event)">隐藏平假名</div>
+            <div class="toggle-katakana" onclick="handleToggleKatakana(event)">隐藏片假名</div>
+            <div class="toggle-romaji" onclick="handleToggleRomaji(event)">隐藏罗马音</div>
+          </div>
+          <button onclick="handlePrveCardItem()">Prve</button>
+          <button onclick="handleNextCardItem()">Next</button>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="./data.js"></script>
   <script src="./index.js"></script>

@@ -125,3 +125,142 @@ html, body, #root {
 .test-view {
   display: none;
 }
+
+
+.dialog-view {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, .6);
+}
+
+.show-dialog {
+  animation: showDialog 3s ease;
+}
+
+.hide-dialog {
+  animation: hideDialog 1s ease;
+}
+
+
+@keyframes showDialog {
+  0% {
+    transform: scale(.1deg);
+  }
+
+  100% {
+    transform: scale(1deg);
+  }
+}
+
+@keyframes hideDialog {
+  0% {
+    transform: scale(1deg);
+  }
+
+  100% {
+    transform: scale(.5deg);
+  }
+}
+
+
+.dialog-view .dialog-inner {
+  position: relative;
+  height: 500px;
+  width: 60%;
+  background: white;
+  border-radius: 5px;
+}
+
+.dialog-view .dialog-inner .inner-tools {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+}
+
+.dialog-view .dialog-inner .inner-tools>div {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.inner-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.inner-close::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.inner-close::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 15px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.dialog-view .dialog-inner .inner-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 34px);
+  width: 100%;
+}
+
+.dialog-view .dialog-inner .inner-card .text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height:200px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px #ccc;
+  background: white;
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.dialog-view .dialog-inner .inner-card .text-box>div {
+  text-align: center;
+}
+
+.dialog-view .dialog-inner .inner-btns {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  width: 100%;
+}
+
+.dialog-view .dialog-inner .inner-btns button {
+  margin-left: 10px;
+  cursor: pointer;
+}
