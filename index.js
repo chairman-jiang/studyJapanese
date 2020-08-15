@@ -63,10 +63,14 @@ function handleNextCardItem () {
   hiraganaDom.setAttribute('style', `display: ${isShowHiragana ? 'block' : 'none'};`)
   katakanaDom.setAttribute('style', `display: ${isShowKatakana ? 'block' : 'none'};`)
   romajiDom.setAttribute('style', `display: ${isShowRomaji ? 'block' : 'none'};`)
-  let list = baseObj.base.flat();
+  // let list = baseObj.base.flat().filter(t => !!t.hiragana);
+  let list = baseObj.base.reduce((prv, cur) => {
+    return prv.concat(cur.slice(1, cur.length).filter(t => !!t.hiragana))
+  }, [])
   let rad = Math.floor(Math.random() * list.length);
   let curData = list[rad];
   
+
   hiraganaDom.innerHTML = curData.hiragana;
   katakanaDom.innerHTML = curData.katakana;
   romajiDom.innerHTML = curData.rome;
@@ -92,3 +96,15 @@ function handleToggleRomaji (e) {
   let romajiDom = document.querySelector('.romaji');
   romajiDom.setAttribute('style', `display: ${isShowRomaji ? 'block' : 'none'};`)
 }
+
+
+document.addEventListener('keydown', function (e) {
+  switch (e.keyCode) {
+    case 13:
+      handleNextCardItem()
+      break;
+    case 27:
+      handleDialogClose()
+      break;
+  }
+})
