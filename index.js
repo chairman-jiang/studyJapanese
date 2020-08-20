@@ -35,6 +35,7 @@
 
 })(baseObj);
 
+let list = [...testList];
 
 let isShowHiragana = true
 let isShowKatakana = true;
@@ -64,12 +65,9 @@ function handleNextCardItem () {
   katakanaDom.setAttribute('style', `display: ${isShowKatakana ? 'block' : 'none'};`)
   romajiDom.setAttribute('style', `display: ${isShowRomaji ? 'block' : 'none'};`)
   // let list = baseObj.base.flat().filter(t => !!t.hiragana);
-  let list = baseObj.base.reduce((prv, cur) => {
-    return prv.concat(cur.slice(1, cur.length).filter(t => !!t.hiragana))
-  }, [])
-  let rad = Math.floor(Math.random() * list.length);
-  let curData = list[rad];
   
+  let rad = Math.floor(Math.random() * list.length);
+  let curData = list.splice(rad, 1)[0];
 
   hiraganaDom.innerHTML = curData.hiragana;
   katakanaDom.innerHTML = curData.katakana;
