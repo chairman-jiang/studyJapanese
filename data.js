@@ -157,3 +157,35 @@ let testList = [
   { id: 2, hiragana: 'ん', katakana: 'ン', rome: 'n' },
 
 ];
+
+let dullnessList = [
+  { id: 1, hiragana: 'が', katakana: 'ガ', rome: 'ga' },
+  { id: 2, hiragana: 'ぎ', katakana: 'ギ', rome: 'gi' },
+  { id: 3, hiragana: 'ぐ', katakana: 'グ', rome: 'gu' },
+  { id: 4, hiragana: 'げ', katakana: 'ゲ', rome: 'ge' },
+  { id: 5, hiragana: 'ご', katakana: 'ゴ', rome: 'go' },
+
+  { id: 1, hiragana: 'ざ', katakana: 'ザ', rome: 'za' },
+  { id: 2, hiragana: 'じ', katakana: 'ジ', rome: 'ji' },
+  { id: 3, hiragana: 'ず', katakana: 'ズ', rome: 'zu' },
+  { id: 4, hiragana: 'ぜ', katakana: 'ゼ', rome: 'ze' },
+  { id: 5, hiragana: 'ぞ', katakana: 'ゾ', rome: 'zo' },
+
+  { id: 1, hiragana: 'だ', katakana: 'ダ', rome: 'da' },
+  { id: 2, hiragana: 'ぢ', katakana: 'ヂ', rome: 'di/ji' },
+  { id: 3, hiragana: 'づ', katakana: 'ヅ', rome: 'du/zu' },
+  { id: 4, hiragana: 'で', katakana: 'デ', rome: 'de' },
+  { id: 5, hiragana: 'ど', katakana: 'ド', rome: 'do' },
+
+  { id: 1, hiragana: 'ば', katakana: 'バ', rome: 'ba' },
+  { id: 2, hiragana: 'び', katakana: 'ビ', rome: 'bi' },
+  { id: 3, hiragana: 'ぶ', katakana: 'ブ', rome: 'bu' },
+  { id: 4, hiragana: 'べ', katakana: 'ベ', rome: 'be' },
+  { id: 5, hiragana: 'ぼ', katakana: 'ボ', rome: 'bo' },
+
+  { id: 1, hiragana: 'ぱ', katakana: 'パ', rome: 'pa' },
+  { id: 2, hiragana: 'ぴ', katakana: 'ピ', rome: 'pi' },
+  { id: 3, hiragana: 'ぷ', katakana: 'プ', rome: 'pu' },
+  { id: 4, hiragana: 'ぺ', katakana: 'ペ', rome: 'pe' },
+  { id: 5, hiragana: 'ぽ', katakana: 'ポ', rome: 'po' },
+];

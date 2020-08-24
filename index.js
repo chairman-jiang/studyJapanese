@@ -35,7 +35,7 @@
 
 })(baseObj);
 
-let list = [...testList];
+let list = [...testList, ...dullnessList];
 
 let isShowHiragana = true
 let isShowKatakana = true;
