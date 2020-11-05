@@ -1,28 +1,28 @@
 ;(function main (tableObj) {
 
-  var baseWordView = document.querySelector('.base-word');
-  var tableFragment = document.createDocumentFragment();
+  let baseWordView = document.querySelector('.base-word');
+  let tableFragment = document.createDocumentFragment();
   tableObj.base.forEach(t => {
-    var tableRow = document.createElement('div');
+    let tableRow = document.createElement('div');
     tableRow.className = 'table-row';
     t.forEach((sub, subIndex) => {
-      var tableCell = document.createElement('div');
+      let tableCell = document.createElement('div');
       tableCell.className = 'table-cell';
       if (subIndex === 0) {
-        var subSpan = document.createElement('span');
+        let subSpan = document.createElement('span');
         subSpan.textContent = sub.hiragana;
         tableCell.appendChild(subSpan);
       } else {
-        var subCellDiv = document.createElement('div');
+        let subCellDiv = document.createElement('div');
         subCellDiv.className = 'cell-words';
-        var hiraganaDiv = document.createElement('div');
+        let hiraganaDiv = document.createElement('div');
         hiraganaDiv.className = "hiragana-div";
-        var katakanaDiv = document.createElement('div');
+        let katakanaDiv = document.createElement('div');
         hiraganaDiv.textContent = sub.hiragana;
         katakanaDiv.textContent = sub.katakana;
         subCellDiv.appendChild(hiraganaDiv);
         subCellDiv.appendChild(katakanaDiv);
-        var romeDiv = document.createElement('div');
+        let romeDiv = document.createElement('div');
         romeDiv.textContent = sub.rome;
         tableCell.appendChild(subCellDiv);
         tableCell.appendChild(romeDiv);
@@ -33,9 +33,55 @@
   });
   baseWordView.appendChild(tableFragment);
 
+
+
+  let dullnessView = document.querySelector('.dullness-word');
+  let tableFragment2 = document.createDocumentFragment();
+  let list = tableObj.dullnessList.reduce((prv, cur, index) => {
+    if (index === 0) {
+      prv.push([]);
+    }
+    prv[prv.length - 1].push(cur);
+    if (cur.id % 5 === 0) {
+      prv[prv.length - 1].unshift(prv[prv.length - 1][0]);
+      prv.push([])
+    }
+    return prv
+  }, []);
+  
+  list.forEach(t => {
+    let tableRow = document.createElement('div');
+    tableRow.className = 'table-row';
+    t.forEach((sub, subIndex) => {
+      let tableCell = document.createElement('div');
+      tableCell.className = 'table-cell';
+      if (subIndex === 0) {
+        let subSpan = document.createElement('span');
+        subSpan.textContent = sub.hiragana;
+        tableCell.appendChild(subSpan);
+      } else {
+        let subCellDiv = document.createElement('div');
+        subCellDiv.className = 'cell-words';
+        let hiraganaDiv = document.createElement('div');
+        hiraganaDiv.className = "hiragana-div";
+        let katakanaDiv = document.createElement('div');
+        hiraganaDiv.textContent = sub.hiragana;
+        katakanaDiv.textContent = sub.katakana;
+        subCellDiv.appendChild(hiraganaDiv);
+        subCellDiv.appendChild(katakanaDiv);
+        let romeDiv = document.createElement('div');
+        romeDiv.textContent = sub.rome;
+        tableCell.appendChild(subCellDiv);
+        tableCell.appendChild(romeDiv);
+      }
+      tableRow.appendChild(tableCell);
+    });
+    tableFragment2.appendChild(tableRow);
+  });
+  dullnessView.appendChild(tableFragment2);
 })(baseObj);
 
-let list = [...testList, ...dullnessList];
+let list = [...testList];
 
 let isShowHiragana = true
 let isShowKatakana = true;

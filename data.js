@@ -89,9 +89,6 @@ var base = [
   ]
 ];
 
-var baseObj = {
-  base: base
-};
 
 let testList = [
   { id: 2, hiragana: 'あ', katakana: 'ア', rome: 'a' },
@@ -189,3 +186,9 @@ let dullnessList = [
   { id: 4, hiragana: 'ぺ', katakana: 'ペ', rome: 'pe' },
   { id: 5, hiragana: 'ぽ', katakana: 'ポ', rome: 'po' },
 ];
+
+
+var baseObj = {
+  base,
+  dullnessList
+};
