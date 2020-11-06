@@ -42,7 +42,7 @@ var base = [
   [
     { id: 1, hiragana: 'は', katakana: '', rome: '' },
     { id: 2, hiragana: 'は', katakana: 'ハ', rome: 'ha' },
-    { id: 3, hiragana: 'ひ', katakana: 'イ', rome: 'hi' },
+    { id: 3, hiragana: 'ひ', katakana: 'ヒ', rome: 'hi' },
     { id: 4, hiragana: 'ふ', katakana: 'フ', rome: 'fu' },
     { id: 5, hiragana: 'へ', katakana: 'ヘ', rome: 'he' },
     { id: 6, hiragana: 'ほ', katakana: 'ホ', rome: 'ho' }
@@ -122,7 +122,7 @@ let testList = [
   { id: 6, hiragana: 'の', katakana: 'ノ', rome: 'no' },
 
   { id: 2, hiragana: 'は', katakana: 'ハ', rome: 'ha' },
-  { id: 3, hiragana: 'ひ', katakana: 'イ', rome: 'hi' },
+  { id: 3, hiragana: 'ひ', katakana: 'ヒ', rome: 'hi' },
   { id: 4, hiragana: 'ふ', katakana: 'フ', rome: 'fu' },
   { id: 5, hiragana: 'へ', katakana: 'ヘ', rome: 'he' },
   { id: 6, hiragana: 'ほ', katakana: 'ホ', rome: 'ho' },
