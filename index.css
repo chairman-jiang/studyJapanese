@@ -98,8 +98,8 @@ html, body, #root {
   width: 100%;
 }
 
-.table-view>div {
-  width: 50%;
+.table-view > div {
+  width: 80%;
   /* height: 50%; */
 }
 
@@ -107,6 +107,7 @@ html, body, #root {
   display: flex;
   height: .54rem;
   width: 100%;
+  margin-bottom: .1rem;
 }
 
 .table-cell {
@@ -187,15 +188,23 @@ html, body, #root {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100% - .8rem);
+  height: calc(100% - 1.3rem);
 }
 
 .inner-btns {
-  height: .5rem;
+  height: 1rem;
 }
 
 .inner-tools {
-  
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  color: black;
+  margin-bottom: 0.05rem;
+}
+
+.inner-instruction {
+  text-align: center;
 }
 
 .inner-close::before {
