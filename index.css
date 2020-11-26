@@ -16,6 +16,7 @@ html, body, #root {
   color: white;
   background: #0C4842;
   overflow-y: auto;
+  font-size: .16rem;
 }
 
 .gloss {
@@ -30,12 +31,12 @@ html, body, #root {
   display: flex;
   align-items: center;
   padding: 0px 10%;
-  height: 60px;
+  height: .6rem;
   width: 100%;
 }
 
 .app-header div {
-  margin-right: 10px;
+  margin-right: .1rem;
 }
 
 .app-header span {
@@ -48,7 +49,7 @@ html, body, #root {
 
 .app-main {
   display: flex;
-  height: calc(100% - 120px);
+  height: calc(100% - 1.2rem);
   width: 100%;
 }
 
@@ -66,29 +67,29 @@ html, body, #root {
 
 .ball-view {
   position: absolute;
-  top: -65px;
+  top: -.65rem;
   right: 0px;
-  width: 80px;
-  height: 400px;
+  width: .8rem;
+  height: 4rem;
 }
 
 .ball {
-  height: 80px;
-  width: 80px;
+  height: .8rem;
+  width: .8rem;
   border-radius: 50%;
   background: #AD2333;
 }
 
 .ball-word {
-  height: calc(100% - 80px);
+  height: calc(100% - .8rem);
   width: 100%;
-  font-size: 56px;
+  font-size: .56rem;
   font-weight: bold;
   text-align: center;
 }
 
 .app-footer {
-  height: 60px;
+  height: .6rem;
   width: 100%;
 }
 
@@ -104,7 +105,7 @@ html, body, #root {
 
 .table-row {
   display: flex;
-  height: 54px;
+  height: .54rem;
   width: 100%;
 }
 
@@ -118,7 +119,7 @@ html, body, #root {
 }
 
 .hiragana-div {
-  margin-right: 5px;
+  margin-right: 0.05rem;
 }
 
 .test-view {
@@ -171,78 +172,67 @@ html, body, #root {
 
 .dialog-view .dialog-inner {
   position: relative;
-  height: 500px;
+  height: 5rem;
   width: 60%;
   background: white;
   border-radius: 5px;
 }
 
-.dialog-view .dialog-inner .inner-tools {
-  position: absolute;
-  left: 10px;
-  top: 0px;
-  color: black;
-  font-weight: bold;
-  display: flex;
-}
-
-.dialog-view .dialog-inner .inner-tools>div {
-  cursor: pointer;
-  margin-right: 10px;
-}
-
 .inner-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  height: 15px;
-  width: 15px;
-  cursor: pointer;
+  position: relative;
+  height: .3rem;
+}
+
+.inner-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - .8rem);
+}
+
+.inner-btns {
+  height: .5rem;
+}
+
+.inner-tools {
+  
 }
 
 .inner-close::before {
   content: "";
   display: block;
   height: 1px;
-  width: 15px;
+  width: .15rem;
   background: black;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
+  right: .1rem;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .inner-close::after {
   content: "";
   display: block;
   height: 1px;
-  width: 15px;
+  width: .15rem;
   background: black;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.dialog-view .dialog-inner .inner-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100% - 34px);
-  width: 100%;
+  right: .1rem;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .dialog-view .dialog-inner .inner-card .text-box {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height:200px;
-  width: 200px;
+  height: 2rem;
+  width: 2rem;
   border-radius: 5px;
   box-shadow: 0 0 10px 5px #ccc;
   background: white;
   color: black;
-  font-size: 28px;
+  font-size: .28rem;
   font-weight: bold;
 }
 
@@ -250,16 +240,14 @@ html, body, #root {
   text-align: center;
 }
 
-.dialog-view .dialog-inner .inner-btns {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-  width: 100%;
+.dialog-view .dialog-inner .inner-btns button {
+  margin-left: .1rem;
+  cursor: pointer;
 }
 
-.dialog-view .dialog-inner .inner-btns button {
-  margin-left: 10px;
-  cursor: pointer;
+@media screen and (max-width: 1366px) {
+  .app-main-body {
+    width: 100% !important;
+    padding: 5%;
+  }
 }

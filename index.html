@@ -5,6 +5,7 @@
   <link rel="icon" href="./images/fov.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./rem.js"></script>
   <link rel="stylesheet" href="./index.css">
   <title>にほんご</title>
 </head>
@@ -24,7 +25,7 @@
         <div id="bodyInner" class="body-inner">
           <div class="table-view">
             <div class="base-word"></div>
-            <div class="dullness-word"></div>          
+            <div class="dullness-word"></div>
           </div>
           <div class="test-view"></div>
         </div>
@@ -47,8 +48,10 @@
             <div class="toggle-katakana" onclick="handleToggleKatakana(event)">隐藏片假名</div>
             <div class="toggle-romaji" onclick="handleToggleRomaji(event)">隐藏罗马音</div>
           </div>
-          <button onclick="handlePrveCardItem()">Prve</button>
-          <button onclick="handleNextCardItem()">Next</button>
+          <div>
+            <button onclick="handlePrveCardItem()">Prve</button>
+            <button onclick="handleNextCardItem()">Next</button>
+          </div>
         </div>
       </div>
     </div>

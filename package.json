@@ -1,0 +1,20 @@
+{
+  "name": "studyJapanese",
+  "version": "1.0.0",
+  "description": "日本の伝統色[https://nipponcolors.com/#oitake](https://nipponcolors.com/#oitake)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chairman-jiang/studyJapanese.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chairman-jiang/studyJapanese/issues"
+  },
+  "homepage": "https://github.com/chairman-jiang/studyJapanese#readme"
+}
