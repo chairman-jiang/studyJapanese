@@ -70,7 +70,6 @@ html, body, #root {
   top: -.65rem;
   right: 0px;
   width: .8rem;
-  height: 4rem;
 }
 
 .ball {
@@ -81,7 +80,7 @@ html, body, #root {
 }
 
 .ball-word {
-  height: calc(100% - .8rem);
+  height: auto;
   width: 100%;
   font-size: .56rem;
   font-weight: bold;
