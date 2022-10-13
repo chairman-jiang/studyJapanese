@@ -18,16 +18,16 @@ var base = [
   [
     { id: 1, hiragana: 'さ', katakana: '', rome: '' },
     { id: 2, hiragana: 'さ', katakana: 'サ', rome: 'sa' },
-    { id: 3, hiragana: 'し', katakana: 'シ', rome: 'xi' },
-    { id: 4, hiragana: 'す', katakana: 'ス', rome: 'si/u' },
+    { id: 3, hiragana: 'し', katakana: 'シ', rome: 'shi' },
+    { id: 4, hiragana: 'す', katakana: 'ス', rome: 'tu' },
     { id: 5, hiragana: 'せ', katakana: 'セ', rome: 'se' },
     { id: 6, hiragana: 'そ', katakana: 'ソ', rome: 'so' }
   ],
   [
     { id: 1, hiragana: 'た', katakana: '', rome: '' },
     { id: 2, hiragana: 'た', katakana: 'タ', rome: 'ta' },
-    { id: 3, hiragana: 'ち', katakana: 'チ', rome: 'qi' },
-    { id: 4, hiragana: 'つ', katakana: 'ツ', rome: 'ci' },
+    { id: 3, hiragana: 'ち', katakana: 'チ', rome: 'chi' },
+    { id: 4, hiragana: 'つ', katakana: 'ツ', rome: 'tsu' },
     { id: 5, hiragana: 'て', katakana: 'テ', rome: 'te' },
     { id: 6, hiragana: 'と', katakana: 'ト', rome: 'to' }
   ],
@@ -43,7 +43,7 @@ var base = [
     { id: 1, hiragana: 'は', katakana: '', rome: '' },
     { id: 2, hiragana: 'は', katakana: 'ハ', rome: 'ha' },
     { id: 3, hiragana: 'ひ', katakana: 'ヒ', rome: 'hi' },
-    { id: 4, hiragana: 'ふ', katakana: 'フ', rome: 'hu' },
+    { id: 4, hiragana: 'ふ', katakana: 'フ', rome: 'fu' },
     { id: 5, hiragana: 'へ', katakana: 'ヘ', rome: 'he' },
     { id: 6, hiragana: 'ほ', katakana: 'ホ', rome: 'ho' }
   ],
@@ -104,14 +104,14 @@ let testList = [
   { id: 6, hiragana: 'こ', katakana: 'コ', rome: 'ko' },
 
   { id: 2, hiragana: 'さ', katakana: 'サ', rome: 'sa' },
-  { id: 3, hiragana: 'し', katakana: 'シ', rome: 'xi' },
-  { id: 4, hiragana: 'す', katakana: 'ス', rome: 'si/u' },
+  { id: 3, hiragana: 'し', katakana: 'シ', rome: 'shi' },
+  { id: 4, hiragana: 'す', katakana: 'ス', rome: 'su' },
   { id: 5, hiragana: 'せ', katakana: 'セ', rome: 'se' },
   { id: 6, hiragana: 'そ', katakana: 'ソ', rome: 'so' },
 
   { id: 2, hiragana: 'た', katakana: 'タ', rome: 'ta' },
-  { id: 3, hiragana: 'ち', katakana: 'チ', rome: 'qi' },
-  { id: 4, hiragana: 'つ', katakana: 'ツ', rome: 'ci' },
+  { id: 3, hiragana: 'ち', katakana: 'チ', rome: 'chi' },
+  { id: 4, hiragana: 'つ', katakana: 'ツ', rome: 'tsu' },
   { id: 5, hiragana: 'て', katakana: 'テ', rome: 'te' },
   { id: 6, hiragana: 'と', katakana: 'ト', rome: 'to' },
 
@@ -123,7 +123,7 @@ let testList = [
 
   { id: 2, hiragana: 'は', katakana: 'ハ', rome: 'ha' },
   { id: 3, hiragana: 'ひ', katakana: 'ヒ', rome: 'hi' },
-  { id: 4, hiragana: 'ふ', katakana: 'フ', rome: 'hu' },
+  { id: 4, hiragana: 'ふ', katakana: 'フ', rome: 'fu' },
   { id: 5, hiragana: 'へ', katakana: 'ヘ', rome: 'he' },
   { id: 6, hiragana: 'ほ', katakana: 'ホ', rome: 'ho' },
 
