@@ -19,7 +19,7 @@ var base = [
     { id: 1, hiragana: 'さ', katakana: '', rome: '' },
     { id: 2, hiragana: 'さ', katakana: 'サ', rome: 'sa' },
     { id: 3, hiragana: 'し', katakana: 'シ', rome: 'shi' },
-    { id: 4, hiragana: 'す', katakana: 'ス', rome: 'tu' },
+    { id: 4, hiragana: 'す', katakana: 'ス', rome: 'su' },
     { id: 5, hiragana: 'せ', katakana: 'セ', rome: 'se' },
     { id: 6, hiragana: 'そ', katakana: 'ソ', rome: 'so' }
   ],
@@ -163,14 +163,14 @@ let dullnessList = [
   { id: 5, hiragana: 'ご', katakana: 'ゴ', rome: 'go' },
 
   { id: 1, hiragana: 'ざ', katakana: 'ザ', rome: 'za' },
-  { id: 2, hiragana: 'じ', katakana: 'ジ', rome: 'ji' },
-  { id: 3, hiragana: 'ず', katakana: 'ズ', rome: 'zi/u' },
+  { id: 2, hiragana: 'じ', katakana: 'ジ', rome: 'zi' },
+  { id: 3, hiragana: 'ず', katakana: 'ズ', rome: 'zu' },
   { id: 4, hiragana: 'ぜ', katakana: 'ゼ', rome: 'ze' },
   { id: 5, hiragana: 'ぞ', katakana: 'ゾ', rome: 'zo' },
 
   { id: 1, hiragana: 'だ', katakana: 'ダ', rome: 'da' },
-  { id: 2, hiragana: 'ぢ', katakana: 'ヂ', rome: 'ji' },
-  { id: 3, hiragana: 'づ', katakana: 'ヅ', rome: 'zi/u' },
+  { id: 2, hiragana: 'ぢ', katakana: 'ヂ', rome: 'zi' },
+  { id: 3, hiragana: 'づ', katakana: 'ヅ', rome: 'zu' },
   { id: 4, hiragana: 'で', katakana: 'デ', rome: 'de' },
   { id: 5, hiragana: 'ど', katakana: 'ド', rome: 'do' },
 
